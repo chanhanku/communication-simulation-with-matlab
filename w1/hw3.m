@@ -1,0 +1,12 @@
+v1=input('enter a vector\n');
+v2=input('enter another vector\n');
+v11=v1(1,1);
+v12=v1(1,2);
+l1=( v11^(2) + v12^(2))^(1/2);
+v21=v2(1,1);
+v22=v2(1,2);
+l2=( v21^(2) + v22^(2))^(1/2);
+v1dotv2 = v1.*v2;
+v1v2=v1dotv2(1,1);
+cosine = v1v2/(l1*l2);
+theta =(180*acos(cosine))/pi 
